@@ -55,23 +55,23 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CAPA-01 | TBD | Pending |
-| CAPA-02 | TBD | Pending |
-| BOOK-01 | TBD | Pending |
-| PRIC-01 | TBD | Pending |
-| PRIC-02 | TBD | Pending |
-| PAYM-01 | TBD | Pending |
-| PAYM-02 | TBD | Pending |
-| COMM-01 | TBD | Pending |
-| INTK-01 | TBD | Pending |
-| PORT-01 | TBD | Pending |
-| WAIT-01 | TBD | Pending |
+| CAPA-01 | Phase 1 | Pending |
+| CAPA-02 | Phase 1 | Pending |
+| BOOK-01 | Phase 2 | Pending |
+| PRIC-01 | Phase 2 | Pending |
+| PRIC-02 | Phase 2 | Pending |
+| PAYM-01 | Phase 3 | Pending |
+| PAYM-02 | Phase 3 | Pending |
+| COMM-01 | Phase 4 | Pending |
+| INTK-01 | Phase 4 | Pending |
+| PORT-01 | Phase 3 | Pending |
+| WAIT-01 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 11 total
-- Mapped to phases: 0
-- Unmapped: 11
+- Mapped to phases: 11
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-20*
-*Last updated: 2026-02-20 after initial definition*
+*Last updated: 2026-02-20 after roadmap mapping*
