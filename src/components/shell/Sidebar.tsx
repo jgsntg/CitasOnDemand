@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { id: 'services' as const, icon: I.Layers,   badge: 0 },
   { id: 'fees'     as const, icon: I.Wallet,   badge: 0 },
   { id: 'clients'  as const, icon: I.Users,    badge: 0 },
+  { id: 'hours'    as const, icon: I.Clock,    badge: 0 },
   { id: 'settings' as const, icon: I.Settings, badge: 0 },
 ];
 

@@ -10,6 +10,7 @@ const STRINGS: Strings = {
   'nav.services':  { en: 'Services',      es: 'Servicios' },
   'nav.fees':      { en: 'Booking fees',  es: 'Tarifas de reserva' },
   'nav.clients':   { en: 'Clients',       es: 'Clientes' },
+  'nav.hours':     { en: 'Working hours', es: 'Horario de trabajo' },
   'nav.settings':  { en: 'Settings',      es: 'Ajustes' },
   'nav.workspace': { en: 'Workspace',     es: 'Espacio de trabajo' },
   'nav.configure': { en: 'Configure',     es: 'Configurar' },
@@ -21,6 +22,7 @@ const STRINGS: Strings = {
   'top.services.sub': { en: 'Define what customers can book — and how you charge', es: 'Define qué pueden reservar y cómo cobras' },
   'top.fees.sub':     { en: 'Decide how much customers pay to hold a slot',       es: 'Decide cuánto pagan los clientes para reservar' },
   'top.clients.sub':  { en: 'Customer history and contact details',               es: 'Historial y contactos de clientes' },
+  'top.hours.sub':    { en: 'Set your open days, times, and hourly capacity',    es: 'Define días, horarios y capacidad por hora' },
   'top.settings.sub': { en: 'Business profile, currency, and policies',           es: 'Perfil del negocio, moneda y políticas' },
 
   // Common actions

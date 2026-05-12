@@ -13,8 +13,9 @@ import CalendarView from './screens/CalendarView';
 import Bookings from './screens/Bookings';
 import Clients from './screens/Clients';
 import SettingsScreen from './screens/SettingsScreen';
+import { WorkingHours, BookingWindow } from './screens/WorkingHours';
 
-export type Route = 'overview' | 'calendar' | 'bookings' | 'services' | 'fees' | 'clients' | 'settings';
+export type Route = 'overview' | 'calendar' | 'bookings' | 'services' | 'fees' | 'clients' | 'hours' | 'settings';
 
 const ROUTE_KEYS: Record<Route, { key: string; subKey: string }> = {
   overview: { key: 'nav.overview', subKey: 'top.overview.sub' },
@@ -23,6 +24,7 @@ const ROUTE_KEYS: Record<Route, { key: string; subKey: string }> = {
   services: { key: 'nav.services', subKey: 'top.services.sub' },
   fees:     { key: 'nav.fees',     subKey: 'top.fees.sub' },
   clients:  { key: 'nav.clients',  subKey: 'top.clients.sub' },
+  hours:    { key: 'nav.hours',    subKey: 'top.hours.sub' },
   settings: { key: 'nav.settings', subKey: 'top.settings.sub' },
 };
 
@@ -79,6 +81,7 @@ export default function AppShell() {
         {route === 'services'  && <Services  tweaks={tweaks} />}
         {route === 'fees'      && <FeeConfig tweaks={tweaks} setTweak={setTweak} />}
         {route === 'clients'   && <Clients   tweaks={tweaks} />}
+        {route === 'hours'     && <><WorkingHours /><BookingWindow /></>}
         {route === 'settings'  && <SettingsScreen tweaks={tweaks} setTweak={setTweak} />}
       </div>
     </div>
