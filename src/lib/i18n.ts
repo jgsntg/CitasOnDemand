@@ -246,6 +246,94 @@ const STRINGS: Strings = {
   'cl.col.spend':    { en: 'Lifetime spend', es: 'Gasto total' },
   'cl.col.last':     { en: 'Last visit',     es: 'Última visita' },
   'cl.last_visit':   { en: 'May 8',          es: '8 may' },
+
+  // ── Customer booking flow ──────────────────────────────────────────────────
+  // Topbar
+  'book.topbar.secure':     { en: 'Secure booking',        es: 'Reserva segura' },
+  'book.topbar.call':       { en: 'Call us',               es: 'Llámanos' },
+  // Page header
+  'book.page.title':        { en: 'Book your visit',       es: 'Reserva tu cita' },
+  // Step 1
+  'book.step1.title':       { en: 'Choose a service',      es: 'Elige un servicio' },
+  'book.step1.sub':         { en: "Pick the treatment you'd like to book.", es: 'Elige el tratamiento que deseas reservar.' },
+  // Step 2
+  'book.step2.title':       { en: 'Pick your provider',    es: 'Elige tu proveedor' },
+  'book.step2.sub':         { en: 'Optional — leave on Any available for the soonest slot.', es: 'Opcional — deja en Cualquier disponible para el primer turno.' },
+  // Step 3
+  'book.step3.title':       { en: 'Pick a date and time',  es: 'Elige fecha y hora' },
+  'book.step3.sub':         { en: 'Showing availability for {min}-minute slots.', es: 'Mostrando disponibilidad para citas de {min} minutos.' },
+  'book.step3.sub_default': { en: 'Choose a service first to see availability.', es: 'Primero elige un servicio para ver disponibilidad.' },
+  'book.step3.tz':          { en: 'All times in ET',       es: 'Todos los horarios en ET' },
+  // Step 4
+  'book.step4.title':       { en: 'Your details',          es: 'Tus datos' },
+  'book.step4.sub':         { en: "We'll send your confirmation here.", es: 'Enviaremos tu confirmación aquí.' },
+  'book.form.first':        { en: 'First name',            es: 'Nombre' },
+  'book.form.last':         { en: 'Last name',             es: 'Apellido' },
+  'book.form.email':        { en: 'Email',                 es: 'Correo electrónico' },
+  'book.form.phone':        { en: 'Phone',                 es: 'Teléfono' },
+  'book.form.phone.hint':   { en: 'optional, for day-of texts', es: 'opcional, para mensajes el día de la cita' },
+  'book.form.notes':        { en: 'Anything we should know?', es: '¿Algo que debamos saber?' },
+  'book.form.notes.hint':   { en: 'optional',              es: 'opcional' },
+  'book.form.notes.ph':     { en: 'Sensitivities, first visit, parking questions…', es: 'Alergias, primera visita, preguntas de estacionamiento…' },
+  'book.form.reminder':     { en: 'Email me a reminder 24 hours before', es: 'Envíame un recordatorio 24 horas antes' },
+  'book.form.reminder.hint':{ en: 'No marketing — just your appointment.', es: 'Sin publicidad — solo tu cita.' },
+  // Step 5
+  'book.step5.title':       { en: 'Review & confirm',      es: 'Revisar y confirmar' },
+  'book.step5.sub':         { en: 'One last look before we lock in your slot.', es: 'Un último vistazo antes de confirmar tu reserva.' },
+  'book.review.due_today':  { en: 'Due today',             es: 'A pagar hoy' },
+  'book.review.due_later':  { en: 'Due at your appointment', es: 'A pagar en tu cita' },
+  'book.review.fee_applied.badge': { en: 'Applied to total', es: 'Aplicado al total' },
+  'book.review.fee_hold.badge':    { en: 'Non-refundable hold', es: 'Cargo no reembolsable' },
+  'book.review.card_num':   { en: 'Card number',           es: 'Número de tarjeta' },
+  'book.review.expires':    { en: 'Expires',               es: 'Vence' },
+  'book.review.zip':        { en: 'ZIP / postal code',     es: 'Código postal' },
+  'book.review.secure':     { en: 'Encrypted checkout · 24h cancellation', es: 'Pago cifrado · Cancelación en 24h' },
+  // CTAs
+  'book.cta.pay':           { en: 'Pay {cur}{amt} & book', es: 'Pagar {cur}{amt} y reservar' },
+  'book.cta.confirm':       { en: 'Confirm booking',       es: 'Confirmar reserva' },
+  // Summary panel
+  'book.summary.title':     { en: 'Your booking',          es: 'Tu reserva' },
+  'book.summary.empty':     { en: "We'll fill this in as you go.\nStart by choosing a service.", es: 'Lo llenaremos mientras avanzas.\nEmpieza eligiendo un servicio.' },
+  'book.summary.when':      { en: 'When',                  es: 'Cuándo' },
+  'book.summary.pick_time': { en: 'Pick a time below',     es: 'Elige un horario abajo' },
+  'book.summary.with':      { en: 'With',                  es: 'Con' },
+  'book.summary.fee_applied':{ en: 'Booking fee (applied)', es: 'Tarifa de reserva (aplicada)' },
+  'book.cancel.note':       { en: 'Free to reschedule up to 24 hours before. Late cancels forfeit any deposit.', es: 'Reprogramación gratuita hasta 24 horas antes. Cancelaciones tardías pierden el depósito.' },
+  // Slot grid
+  'book.slot.open':         { en: '{n} open',              es: '{n} disponibles' },
+  'book.slot.none':         { en: 'No availability this day. Try another date.', es: 'Sin disponibilidad este día. Prueba otra fecha.' },
+  'book.slot.pick':         { en: 'Pick a date above to see open times.', es: 'Elige una fecha arriba para ver horarios disponibles.' },
+  'book.slot.times':        { en: 'Available times',       es: 'Horarios disponibles' },
+  // Categories
+  'book.cat.all':           { en: 'All',                   es: 'Todos' },
+  // Practitioner
+  'book.prac.any.name':     { en: 'Any available',         es: 'Cualquier disponible' },
+  'book.prac.any.role':     { en: 'First slot that fits',  es: 'Primer turno disponible' },
+  // Badges
+  'book.badge.popular':     { en: 'Most booked',           es: 'Más reservado' },
+  // Wizard
+  'book.wizard.step':       { en: 'Step {n} of {total}',   es: 'Paso {n} de {total}' },
+  'book.wizard.back':       { en: 'Back',                  es: 'Atrás' },
+  'book.wizard.continue':   { en: 'Continue',              es: 'Continuar' },
+  'book.wizard.l1':         { en: 'Service',               es: 'Servicio' },
+  'book.wizard.l2':         { en: 'Provider',              es: 'Proveedor' },
+  'book.wizard.l3':         { en: 'Date & time',           es: 'Fecha y hora' },
+  'book.wizard.l4':         { en: 'Your details',          es: 'Tus datos' },
+  'book.wizard.l5':         { en: 'Review',                es: 'Revisión' },
+  // Confirmation screen
+  'book.confirm.title':     { en: "You're booked.",        es: '¡Tu reserva está confirmada!' },
+  'book.confirm.sub':       { en: 'We sent a confirmation to {email}. You can reschedule or cancel any time from the link in that message.', es: 'Enviamos una confirmación a {email}. Puedes reprogramar o cancelar desde el enlace en ese mensaje.' },
+  'book.confirm.when':      { en: 'When',                  es: 'Cuándo' },
+  'book.confirm.with':      { en: 'With',                  es: 'Con' },
+  'book.confirm.where':     { en: 'Where',                 es: 'Dónde' },
+  'book.confirm.next_avail':{ en: 'Next available provider', es: 'Próximo proveedor disponible' },
+  'book.confirm.paid':      { en: 'Paid today',            es: 'Pagado hoy' },
+  'book.confirm.due':       { en: 'Due at appointment',    es: 'A pagar en tu cita' },
+  'book.confirm.add_cal':   { en: 'Add to calendar',       es: 'Agregar al calendario' },
+  'book.confirm.resend':    { en: 'Resend confirmation',   es: 'Reenviar confirmación' },
+  'book.confirm.another':   { en: 'Book another',          es: 'Reservar otra cita' },
+  'book.confirm.confirmed': { en: 'Confirmed',             es: 'Confirmada' },
+  'book.pay.card':          { en: 'Card',                  es: 'Tarjeta' },
 };
 
 export function makeT(lang: Lang) {
