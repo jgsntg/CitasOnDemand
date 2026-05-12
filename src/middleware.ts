@@ -1,16 +1,11 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
+import { NextResponse } from 'next/server';
 
-const isPublic = createRouteMatcher(['/', '/sign-in(.*)', '/sign-up(.*)', '/booking(.*)']);
-
-export default clerkMiddleware(async (auth, req) => {
-  if (!isPublic(req)) {
-    const { userId } = await auth();
-    if (!userId) {
-      const { redirectToSignIn } = await auth();
-      return redirectToSignIn();
-    }
-  }
-});
+// Auth middleware disabled — Clerk keys not yet configured.
+// Replace this with clerkMiddleware() once NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+// and CLERK_SECRET_KEY are added to Vercel environment variables.
+export function middleware() {
+  return NextResponse.next();
+}
 
 export const config = {
   matcher: ['/((?!_next|.*\\..*).*)'],

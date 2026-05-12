@@ -28,3 +28,4 @@ pnpm-debug.log*
 .vscode/
 
 /src/generated/prisma
+.vercel
